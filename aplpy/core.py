@@ -952,6 +952,8 @@ class FITSFigure(Layers, Regions):
                                 cmap=cmap,
                                 colors=colors, **kwargs)
 
+        plt.clabel(c, inline=1, fontsize=10)
+
         if layer:
             contour_set_name = layer
         else:
